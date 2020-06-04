@@ -24,9 +24,10 @@ hobby: hobby;
     }
    }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
+onClick(){
+  window.alert("Aucune informations suplementaire pour le moment")
+}
 }
 interface hobby{
   hobbyUn: string;
