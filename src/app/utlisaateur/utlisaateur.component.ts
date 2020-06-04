@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DonneesService } from '../donnees.service';
 @Component({
   selector: 'app-utlisaateur',
   templateUrl: './utlisaateur.component.html',
@@ -12,7 +12,7 @@ email: string;
 hobby: hobby;
 
 
-  constructor() {
+  constructor(private donnees: DonneesService) {
     this.nom='Sylla';
     this.age=28;
     this.email='sylla@seysoo.org'
